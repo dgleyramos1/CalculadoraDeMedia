@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Calculadora de média</title>
+    </head>
+    <body>
+        <div id="container-principal">
+            <form  onsubmit="return false">
+                <h4>Digite as médias dos seguintes bimestres</h4>
+                
+                <div id="inputs-estilo">
+                    <div>
+                        <label>Primeiro Bimestre:</label> <br>
+                        <input type="number" id="nota1" placeholder="0" required value="">
+                    </div>
+                    <div>
+                        <label>Segundo Bimestre:</label><br>
+                        <input type="number" id="nota2" placeholder="0" required value="">
+                    </div>
+                    <div>
+                        <label>Terceiro Bimestre:</label><br>
+                        <input type="number" id="nota3" placeholder="0" required value="">
+                    </div>
+                    <div>
+                        <label>Quarto Bimestre:</label><br>
+                        <input type="number" id="nota4" placeholder="0" required value="">
+                    </div>
+                </div>
+                <div>
+                    <label>Média:</label><br>
+                    <p id="media"></p>
+                    <p id="resposta" style="text-align: center;"></p>
+                    <p id="imagem" style="text-align: center;"></p>
+                </div>
+                <button onclick="sum()">Calcular</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
